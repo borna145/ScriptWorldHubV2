@@ -1,0 +1,33 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("ScriptWorldHubV2", "Ocean")
+--main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Info")
+MainSection:NewLabel("Beta")
+MainSection:NewLabel("Made using Kavo UI Library")
+MainSection:NewLabel("Made by borna3234#1100")
+MainSection:NewLabel("When changing theme click the x once to go back to the original theme from light mode")
+--Scripts 
+local Scripts = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("scripts")
+--Spider/Multiply
+ScriptsSection:NewButton("Multiply (spam button) or spider (click once)", "MAY BREAK GAME", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/NnewD07n"))()
+end)
+--Infinite yield
+ScriptsSection:NewButton("INFINITE YIELD", "Self explanitory", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+--Ender
+ScriptsSection:NewButton("Ender", "Script", function()
+    loadstring(game:HttpGet(loadstring(game:HttpGet("https://pastebin.com/raw/VThRR4Lu"))()))()
+end)
+--Neptunian V
+ScriptsSection:NewButton("Neptunian V", "Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GelatekWasTaken/real/main/Neptunian"))()
+end)
+--Punch
+ScriptsSection:NewButton("Punch", "Allows you to punch", function()
+    loadstring(game:HttpGet("https://pastebin.com/raw/gNnLEbua"))()
+end)
+--CURRENTLY HAS NO THEMES AS IT IS IN BETA AND NEPTUNAIN V DOESNT WORK OTHER THINGS SHOULD WORK
