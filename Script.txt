@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("ScriptWorldHubV2", "Ocean")
+local Window = Library.CreateLib("ScriptWorldHubV2", "Synapse")
 --main
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Info")
@@ -30,4 +30,11 @@ end)
 ScriptsSection:NewButton("Punch", "Allows you to punch", function()
     loadstring(game:HttpGet("https://pastebin.com/raw/gNnLEbua"))()
 end)
---CURRENTLY HAS NO THEMES AS IT IS IN BETA AND NEPTUNAIN V DOESNT WORK OTHER THINGS SHOULD WORK
+--Gelatek hub
+
+ScriptsSection:NewLabel("Credit to the original creators for their hubs")
+local Settings = Window:NewTab("Settings")
+local SettingsSection = Settings:NewSection("Settings")
+SettingsSection:NewButton("Ocean theme", "Close the ocean theme gui if u want to go to old", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/borna145/Ocean-Theme-HUBV2/main/OCEANTHEME"))()
+end)
